@@ -1,0 +1,4 @@
+PIL
+pathlib
+shutil
+appscript
