@@ -3,7 +3,7 @@ import os
 import time
 from pathlib import Path
 
-folder = os.path.join(Path.cwd(), 'video', )
+folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'video/', )
 
 frame_rate = 2
 

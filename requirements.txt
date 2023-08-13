@@ -1,4 +1,3 @@
-PIL
+pillow
 pathlib
-shutil
 appscript

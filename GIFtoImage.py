@@ -32,6 +32,6 @@ def gif_to_jpeg(input_gif, output_folder):
 
 
 input_gif = input('Enter Path To GIF: ')
-output_folder = os.path.join(Path.cwd(), 'video', )
+output_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'video', )
 
 gif_to_jpeg(input_gif, output_folder)
