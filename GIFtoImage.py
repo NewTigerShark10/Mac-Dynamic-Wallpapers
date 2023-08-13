@@ -4,8 +4,11 @@ from pathlib import Path
 import shutil
 
 def gif_to_jpeg(input_gif, output_folder):
-    shutil.rmtree(output_folder)
-    os.mkdir(output_folder)
+    if(os.path.exists(output_folder)):
+        shutil.rmtree(output_folder)
+        os.mkdir(output_folder)
+    else:
+        os.mkdir(output_folder)
     try:
         im = Image.open(input_gif)
     except IOError:
